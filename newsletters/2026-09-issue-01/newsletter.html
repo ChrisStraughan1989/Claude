@@ -64,6 +64,19 @@
   h2.section.teal{ color:var(--teal); border-bottom-color:var(--teal); }
   h2.section.green{ color:#5E8E23; border-bottom-color:var(--green); }
   h3.item{ font-size:10.3pt; margin:3.4mm 0 1mm 0; color:var(--dark); font-weight:700;}
+
+  .sec-head{ display:flex; align-items:center; gap:3.4mm; margin-bottom:2.2mm; padding-bottom:1.6mm; border-bottom:1.4pt solid var(--blue);}
+  .sec-head.teal{ border-bottom-color:var(--teal); }
+  .sec-head.green{ border-bottom-color:var(--green); }
+  .sec-head .sec-badge{
+    width:11mm; height:11mm; min-width:11mm; border-radius:50%; background:var(--blue); color:#fff;
+    display:flex; align-items:center; justify-content:center; font-size:13pt; font-weight:800; line-height:1;
+  }
+  .sec-head.teal .sec-badge{ background:var(--teal); }
+  .sec-head.green .sec-badge{ background:#5E8E23; }
+  .sec-head .htext{ flex:1; }
+  .sec-head .htext .kicker{ margin:0 0 0.8mm 0; }
+  .sec-head h2.section{ margin:0; padding:0; border:none; }
   p{margin:0 0 2mm 0;}
   .lead{font-size:9.6pt; color:var(--gray); margin-bottom:3.4mm;}
 
@@ -86,16 +99,12 @@
 
   .action{
     background:#EFF7EC; border:0.7pt solid var(--green);
-    border-radius:1.5mm; padding:2.6mm 4.5mm; margin:1.8mm 0 3mm 0; font-size:8.9pt;
+    border-radius:1.5mm; padding:2.2mm 4.5mm; margin:1.6mm 0 2.4mm 0; font-size:8.9pt;
   }
   .action b{color:#4C7A1E;}
 
   .twocol{ display:flex; gap:7mm; }
   .twocol .col{flex:1;}
-
-  table.svc{ width:100%; border-collapse:collapse; margin-top:1.6mm;}
-  table.svc td{ vertical-align:top; padding:1.6mm 3mm; border-top:0.5pt solid var(--linegray); font-size:8.6pt;}
-  table.svc td.h{ font-weight:700; width:30mm; color:var(--blue);}
 
   .pillrow{ display:flex; gap:3.5mm; margin-top:4mm; }
   .pillrow .pill{ flex:1; background:var(--lightgray); border-radius:2mm; padding:3.2mm 3.5mm; }
@@ -107,14 +116,14 @@
   .welcome .role{ color:var(--gray); font-size:8.4pt;}
 
   .cta{
-    margin-top:3.5mm; background:linear-gradient(90deg,var(--blue),var(--teal)); color:#fff;
-    border-radius:2mm; padding:4.6mm 6.5mm; text-align:center;
+    margin-top:2.6mm; background:linear-gradient(90deg,var(--blue),var(--teal)); color:#fff;
+    border-radius:2mm; padding:3.8mm 6.5mm; text-align:center;
   }
-  .cta h3{margin:0 0 1.3mm 0; font-size:11.8pt;}
-  .cta p{color:#EAF3F8; font-size:9pt; margin:0 0 2.2mm 0;}
+  .cta h3{margin:0 0 1.1mm 0; font-size:11.4pt;}
+  .cta p{color:#EAF3F8; font-size:8.8pt; margin:0 0 1.8mm 0;}
   .cta .details{font-weight:700; font-size:9.6pt;}
 
-  .diamond-strip{ display:flex; height:2mm; margin:4mm 0;}
+  .diamond-strip{ display:flex; height:2mm; margin:3mm 0;}
   .diamond-strip span{flex:1;}
   .diamond-strip span:nth-child(1){background:var(--blue);}
   .diamond-strip span:nth-child(2){background:var(--teal);}
@@ -122,7 +131,7 @@
 
   .small{font-size:7.6pt; color:var(--gray);}
 
-  .team{ display:flex; gap:7mm; margin:2.6mm 0 4mm 0; }
+  .team{ display:flex; gap:7mm; margin:2mm 0 3mm 0; }
   .team .member{ flex:1; display:flex; gap:3.5mm; align-items:flex-start; }
   .team .member img{ width:17mm; height:17mm; border-radius:50%; object-fit:cover; border:1.5pt solid var(--lightgray); flex-shrink:0;}
   .team .member .name{ font-weight:800; font-size:9.2pt; color:var(--dark); line-height:1.2;}
@@ -153,13 +162,34 @@
   .accred .tx b{ color:var(--dark); }
 
   .trend-row{ display:flex; gap:4.5mm; margin-top:3mm; }
-  .trend-month{ flex:1; background:var(--lightgray); border-radius:2mm; padding:3.6mm 4.2mm; }
-  .trend-month h4{ margin:0 0 2.6mm 0; font-size:9.2pt; color:var(--blue); text-transform:uppercase; letter-spacing:.03em;
+  .trend-month{ flex:1; background:var(--lightgray); border-radius:2mm; padding:3.6mm 4.2mm; border-top:2.4pt solid var(--blue);}
+  .trend-month:nth-child(2){ border-top-color:var(--teal); }
+  .trend-month:nth-child(3){ border-top-color:#5E8E23; }
+  .trend-month h4{ margin:0 0 2.6mm 0; font-size:9.2pt; color:var(--dark); text-transform:uppercase; letter-spacing:.03em;
     border-bottom:0.6pt solid var(--linegray); padding-bottom:1.6mm;}
   .trend-month .ti{ margin-bottom:2.8mm; }
   .trend-month .ti:last-child{ margin-bottom:0; }
   .trend-month .ti .tnum{ font-weight:800; font-size:10.4pt; color:var(--dark); display:block; line-height:1.2;}
+  .trend-month .ti .tnum .arrow{ display:inline-block; margin-right:1.2mm; font-size:8.4pt; color:var(--blue); }
   .trend-month .ti .tdesc{ font-size:7.9pt; color:var(--gray); line-height:1.32; }
+
+  .num-grid{ display:grid; grid-template-columns:1fr 1fr; gap:3mm 6mm; margin-top:2mm; }
+  .num-grid .n{ display:flex; gap:2.8mm; align-items:flex-start; }
+  .num-grid .n .nb{
+    width:6.2mm; height:6.2mm; min-width:6.2mm; border-radius:50%; background:var(--teal); color:#fff;
+    font-weight:800; font-size:8.6pt; display:flex; align-items:center; justify-content:center; margin-top:0.3mm;
+  }
+  .num-grid .n .nt b{ display:block; font-size:9.4pt; color:var(--dark); margin-bottom:0.6mm;}
+  .num-grid .n .nt span{ font-size:8.2pt; color:var(--gray); line-height:1.32;}
+
+  .svc-grid{ display:grid; grid-template-columns:1fr 1fr; gap:0 5.5mm; margin-top:2mm; }
+  .svc-grid .s{ display:flex; gap:2.8mm; align-items:flex-start; padding:1.8mm 0; border-top:0.5pt solid var(--linegray);}
+  .svc-grid .sb{
+    width:7.2mm; height:7.2mm; min-width:7.2mm; border-radius:50%; background:#fff; color:var(--blue);
+    display:flex; align-items:center; justify-content:center; font-weight:800; font-size:8.6pt; border:1.2pt solid var(--blue);
+  }
+  .svc-grid .st b{ display:block; font-size:8.9pt; color:var(--dark); margin-bottom:0.5mm;}
+  .svc-grid .st span{ font-size:7.9pt; color:var(--gray); line-height:1.3;}
 </style>
 </head>
 <body>
@@ -228,8 +258,13 @@
     <div class="issue-tag">Issue 01 &middot; 1 October 2026</div>
   </div>
 
-  <span class="kicker">Section 01</span>
-  <h2 class="section">IR &amp; ER Update</h2>
+  <div class="sec-head">
+    <div class="sec-badge">$</div>
+    <div class="htext">
+      <span class="kicker">Section 01</span>
+      <h2 class="section">IR &amp; ER Update</h2>
+    </div>
+  </div>
   <p class="lead">The three biggest industrial and employee relations developments this quarter, and what they mean on the ground.</p>
 
   <h3 class="item">Annual Wage Review 2026: award rates up 4.75%, minimum wage breaks $1,000/week</h3>
@@ -270,28 +305,21 @@
     <div class="issue-tag">Issue 01 &middot; 1 October 2026</div>
   </div>
 
-  <span class="kicker teal">Section 02</span>
-  <h2 class="section teal">Award Compliance Corner</h2>
+  <div class="sec-head teal">
+    <div class="sec-badge">%</div>
+    <div class="htext">
+      <span class="kicker teal">Section 02</span>
+      <h2 class="section teal">Award Compliance Corner</h2>
+    </div>
+  </div>
   <p class="lead">Award underpayment remains one of the most common, and most expensive, risks we see in
   WA businesses. Here's what to check this quarter.</p>
 
-  <div class="twocol">
-    <div class="col">
-      <h3 class="item">1. Rates</h3>
-      <p>Confirm every classification reflects the 4.75% increase from the first full pay period on or after
-      1&nbsp;July 2026, including allowances and penalty rates, which are often missed.</p>
-      <h3 class="item">2. Casual conversion</h3>
-      <p>80+ modern awards now carry a casual conversion / "employee choice" pathway. Long-term regular casuals may
-      trigger active obligations to respond to conversion requests.</p>
-    </div>
-    <div class="col">
-      <h3 class="item">3. Classifications</h3>
-      <p>With the FWC phasing out the C13 classification, businesses using entry-level classifications should watch
-      for flow-on structural changes in future reviews.</p>
-      <h3 class="item">4. Rostering &amp; overtime</h3>
-      <p>Hospitality and retail award flexibility is under active FWC review, with potential changes to penalty
-      rates and rostering rules worth watching if these awards apply to you.</p>
-    </div>
+  <div class="num-grid">
+    <div class="n"><div class="nb">1</div><div class="nt"><b>Rates</b><span>Confirm every classification reflects the 4.75% increase from the first full pay period on or after 1&nbsp;July 2026, including allowances and penalty rates, which are often missed.</span></div></div>
+    <div class="n"><div class="nb">2</div><div class="nt"><b>Casual conversion</b><span>80+ modern awards now carry a casual conversion / "employee choice" pathway. Long-term regular casuals may trigger active obligations to respond to conversion requests.</span></div></div>
+    <div class="n"><div class="nb">3</div><div class="nt"><b>Classifications</b><span>With the FWC phasing out the C13 classification, businesses using entry-level classifications should watch for flow-on structural changes in future reviews.</span></div></div>
+    <div class="n"><div class="nb">4</div><div class="nt"><b>Rostering &amp; overtime</b><span>Hospitality and retail award flexibility is under active FWC review, with potential changes to penalty rates and rostering rules worth watching if these awards apply to you.</span></div></div>
   </div>
   <div class="callout"><b>Real result:</b> we recently helped a 50+ employee sporting club that had been paid under
   the wrong award for five years, correcting classifications, contracts and payroll, and protecting directors from
@@ -299,8 +327,13 @@
 
   <div class="diamond-strip"><span></span><span></span><span></span></div>
 
-  <span class="kicker green">Section 03</span>
-  <h2 class="section green">WHS &amp; Safety Focus</h2>
+  <div class="sec-head green">
+    <div class="sec-badge">&#10010;</div>
+    <div class="htext">
+      <span class="kicker green">Section 03</span>
+      <h2 class="section green">WHS &amp; Safety Focus</h2>
+    </div>
+  </div>
   <p class="lead">Two WHS developments worth putting on your radar this quarter, particularly for WA-based employers.</p>
 
   <h3 class="item">Psychosocial hazards: guidance is now enforcement</h3>
@@ -331,25 +364,30 @@
     <div class="issue-tag">Issue 01 &middot; 1 October 2026</div>
   </div>
 
-  <span class="kicker">Section 04</span>
-  <h2 class="section">Australian Market Trends</h2>
+  <div class="sec-head">
+    <div class="sec-badge">&#9650;</div>
+    <div class="htext">
+      <span class="kicker">Section 04</span>
+      <h2 class="section">Australian Market Trends</h2>
+    </div>
+  </div>
   <p class="lead">What moved in the labour market, wages and hiring this quarter, month by month.</p>
 
   <div class="trend-row">
     <div class="trend-month">
       <h4>July 2026</h4>
-      <div class="ti"><span class="tnum">Unemployment ticks up to 4.5%</span><span class="tdesc">The national unemployment rate rose to 4.5% in July, the clearest sign yet of a cooling jobs market.</span></div>
-      <div class="ti"><span class="tnum">Wage growth holds at 3.2%</span><span class="tdesc">The Wage Price Index rose 0.8% for a fifth straight quarter (3.2% annually), moderating from 3.4% a year earlier.</span></div>
+      <div class="ti"><span class="tnum"><span class="arrow">&#9650;</span>Unemployment ticks up to 4.5%</span><span class="tdesc">The national unemployment rate rose to 4.5% in July, the clearest sign yet of a cooling jobs market.</span></div>
+      <div class="ti"><span class="tnum"><span class="arrow">&#9679;</span>Wage growth holds at 3.2%</span><span class="tdesc">The Wage Price Index rose 0.8% for a fifth straight quarter (3.2% annually), moderating from 3.4% a year earlier.</span></div>
     </div>
     <div class="trend-month">
       <h4>August 2026</h4>
-      <div class="ti"><span class="tnum">Cash rate held at 4.35%</span><span class="tdesc">The RBA held in August, but the major banks are tipping one more rise before year-end on sticky inflation.</span></div>
-      <div class="ti"><span class="tnum">WA bucks the hiring slowdown</span><span class="tdesc">WA and SA were the only states with job ads still growing month-on-month, while applications per ad hit a record high nationally.</span></div>
+      <div class="ti"><span class="tnum"><span class="arrow">&#9679;</span>Cash rate held at 4.35%</span><span class="tdesc">The RBA held in August, but the major banks are tipping one more rise before year-end on sticky inflation.</span></div>
+      <div class="ti"><span class="tnum"><span class="arrow">&#9650;</span>WA bucks the hiring slowdown</span><span class="tdesc">WA and SA were the only states with job ads still growing month-on-month, while applications per ad hit a record high nationally.</span></div>
     </div>
     <div class="trend-month">
       <h4>September 2026</h4>
-      <div class="ti"><span class="tnum">CPI steady at 3.5%</span><span class="tdesc">Annual inflation held at 3.5% to September, with underlying inflation still above the RBA's 2&ndash;3% target band.</span></div>
-      <div class="ti"><span class="tnum">Vacancy fill rate down to 68.2%</span><span class="tdesc">Trades and technicians make up 51% of persistent skill shortages, with 330,000+ roles still unfilled nationally.</span></div>
+      <div class="ti"><span class="tnum"><span class="arrow">&#9679;</span>CPI steady at 3.5%</span><span class="tdesc">Annual inflation held at 3.5% to September, with underlying inflation still above the RBA's 2&ndash;3% target band.</span></div>
+      <div class="ti"><span class="tnum"><span class="arrow">&#9660;</span>Vacancy fill rate down to 68.2%</span><span class="tdesc">Trades and technicians make up 51% of persistent skill shortages, with 330,000+ roles still unfilled nationally.</span></div>
     </div>
   </div>
 
@@ -372,8 +410,13 @@
     <div class="issue-tag">Issue 01 &middot; 1 October 2026</div>
   </div>
 
-  <span class="kicker">Section 05</span>
-  <h2 class="section">Respect@Work Spotlight: the Positive Duty has teeth</h2>
+  <div class="sec-head">
+    <div class="sec-badge">!</div>
+    <div class="htext">
+      <span class="kicker">Section 05</span>
+      <h2 class="section">Respect@Work Spotlight: the Positive Duty has teeth</h2>
+    </div>
+  </div>
   <p>The obligation to prevent sexual harassment before it happens is no longer theoretical. It's an active
   enforcement priority: the Australian Human Rights Commission has confirmed six formal inquiries underway, a
   further 18 organisations being monitored, and roughly 140 complaints relating to potential non-compliance. A
@@ -385,20 +428,25 @@
 
   <div class="diamond-strip"><span></span><span></span><span></span></div>
 
-  <span class="kicker green">Section 06</span>
-  <h2 class="section green">How Fortuna Can Help</h2>
+  <div class="sec-head green">
+    <div class="sec-badge">&#9733;</div>
+    <div class="htext">
+      <span class="kicker green">Section 06</span>
+      <h2 class="section green">How Fortuna Can Help</h2>
+    </div>
+  </div>
   <p class="lead">Everything in this newsletter (wage reviews, award risk, WHS obligations, Respect@Work) is work
   we do for clients every day.</p>
 
-  <table class="svc">
-    <tr><td class="h">HR Retainer</td><td>One dedicated consultant, same-day priority response, no lock-in contract, unlimited access to our HR/WHS template library, and legal backup through Fortuna's employment lawyers.</td></tr>
-    <tr><td class="h">Award &amp; Compliance</td><td>Classification checks, pay rate verification, penalty &amp; overtime compliance, allowances, rostering and casual conversion reviews.</td></tr>
-    <tr><td class="h">WHS Audits</td><td>Gap analysis, safety documentation &amp; registers, risk assessments, incident reporting, safety training/inductions and contractor compliance checks.</td></tr>
-    <tr><td class="h">HR Documentation</td><td>Employment contracts, policies &amp; procedures, position descriptions, performance frameworks, induction packs and employee handbooks.</td></tr>
-    <tr><td class="h">Investigations</td><td>Licensed workplace investigators for bullying, harassment and Respect@Work matters, plus insurance investigations, private investigations/surveillance and mediation.</td></tr>
-    <tr><td class="h">Recruitment</td><td>End-to-end recruitment, confidential executive search, onsite recruiters for large projects, and mobilisation management for resources-sector clients.</td></tr>
-    <tr><td class="h">Projects &amp; Advisory</td><td>Enterprise agreements, redundancy/restructure support, M&amp;A people integration, leadership training, remuneration benchmarking and HRIS rollout support, fixed-fee or hourly.</td></tr>
-  </table>
+  <div class="svc-grid">
+    <div class="s"><div class="sb">H</div><div class="st"><b>HR Retainer</b><span>One dedicated consultant, same-day priority response, no lock-in contract, unlimited access to our HR/WHS template library, and legal backup through Fortuna's employment lawyers.</span></div></div>
+    <div class="s"><div class="sb">A</div><div class="st"><b>Award &amp; Compliance</b><span>Classification checks, pay rate verification, penalty &amp; overtime compliance, allowances, rostering and casual conversion reviews.</span></div></div>
+    <div class="s"><div class="sb">W</div><div class="st"><b>WHS Audits</b><span>Gap analysis, safety documentation &amp; registers, risk assessments, incident reporting, safety training/inductions and contractor compliance checks.</span></div></div>
+    <div class="s"><div class="sb">D</div><div class="st"><b>HR Documentation</b><span>Employment contracts, policies &amp; procedures, position descriptions, performance frameworks, induction packs and employee handbooks.</span></div></div>
+    <div class="s"><div class="sb">I</div><div class="st"><b>Investigations</b><span>Licensed workplace investigators for bullying, harassment and Respect@Work matters, plus insurance investigations, private investigations/surveillance and mediation.</span></div></div>
+    <div class="s"><div class="sb">R</div><div class="st"><b>Recruitment</b><span>End-to-end recruitment, confidential executive search, onsite recruiters for large projects, and mobilisation management for resources-sector clients.</span></div></div>
+    <div class="s"><div class="sb">P</div><div class="st"><b>Projects &amp; Advisory</b><span>Enterprise agreements, redundancy/restructure support, M&amp;A people integration, leadership training, remuneration benchmarking and HRIS rollout support, fixed-fee or hourly.</span></div></div>
+  </div>
 
   <div class="team">
     <div class="member">
@@ -427,7 +475,7 @@
     <div class="details">(08) 9240 4211 &nbsp;&middot;&nbsp; hr@fortunaadvisors.com.au &nbsp;&middot;&nbsp; www.fortunaadvisors.com.au</div>
   </div>
 
-  <p class="small" style="margin-top:3.5mm;">This newsletter is general information current as at 1 October 2026 and
+  <p class="small" style="margin-top:2.4mm;">This newsletter is general information current as at 1 October 2026 and
   is not legal advice; talk to us before relying on it. &copy; Fortuna People Solutions, part of Fortuna Advisory
   Group. To unsubscribe, reply to this email and let us know.</p>
 
