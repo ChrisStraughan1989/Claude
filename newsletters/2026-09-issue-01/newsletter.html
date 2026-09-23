@@ -40,7 +40,7 @@
     margin:-15mm -15mm 6mm -15mm;
   }
   .masthead{ display:flex; align-items:center; justify-content:space-between; margin-bottom:3.5mm;}
-  .masthead img{height:11mm;}
+  .masthead img{height:12.5mm;}
   .masthead .issue-tag{
     text-align:right; color:var(--gray); font-size:8pt; font-weight:600; letter-spacing:.04em; text-transform:uppercase;
   }
@@ -131,6 +131,26 @@
 
   .callout{ background:var(--lightgray); border-radius:1.5mm; padding:2.6mm 4.5mm; margin:2mm 0 0 0; font-size:8.6pt; font-style:italic; color:var(--gray);}
   .callout b{ color:var(--dark); font-style:normal;}
+
+  .cover-masthead img{height:15mm;}
+
+  .glance{ display:flex; gap:4mm; margin:4mm 0 5mm 0; }
+  .glance .g{ flex:1; background:var(--lightgray); border-top:2.4pt solid var(--blue); border-radius:0 0 1.5mm 1.5mm; padding:3mm 3.5mm; text-align:center;}
+  .glance .g:nth-child(2){ border-top-color:var(--teal); }
+  .glance .g:nth-child(3){ border-top-color:#5E8E23; }
+  .glance .g .num{ display:block; font-size:15pt; font-weight:800; color:var(--dark); line-height:1.15;}
+  .glance .g .cap{ font-size:7.6pt; color:var(--gray); }
+
+  .why-grid{ display:grid; grid-template-columns:1fr 1fr; gap:3mm 6mm; margin-top:2.6mm; }
+  .why-grid .w{ display:flex; gap:2.6mm; align-items:flex-start; }
+  .why-grid .w .mk{ width:4.6mm; height:4.6mm; min-width:4.6mm; border-radius:50%; background:var(--green); margin-top:0.6mm;}
+  .why-grid .w .tx b{ display:block; font-size:8.8pt; color:var(--dark);}
+  .why-grid .w .tx span{ font-size:8.1pt; color:var(--gray); line-height:1.3;}
+
+  .accred{ display:flex; align-items:center; gap:3.5mm; margin-top:5mm; padding-top:3.5mm; border-top:0.6pt solid var(--linegray);}
+  .accred img{ height:11mm; }
+  .accred .tx{ font-size:8.1pt; color:var(--gray); line-height:1.35;}
+  .accred .tx b{ color:var(--dark); }
 </style>
 </head>
 <body>
@@ -138,34 +158,50 @@
 <!-- ================= PAGE 1 : COVER ================= -->
 <div class="page">
   <div class="brandbar"></div>
-  <div class="masthead">
-    <img src="assets/fortuna-logo.jpg" alt="Fortuna People Solutions">
+  <div class="masthead cover-masthead">
+    <img src="assets/fortuna-logo-hires.png" alt="Fortuna People Solutions">
     <div class="issue-tag">Issue 01 &middot; 1 October 2026</div>
   </div>
 
   <h1 class="title">The Fortuna Update</h1>
   <div class="subtitle">Your quarterly briefing on IR &amp; ER, Award compliance and WHS, plus how we can help</div>
 
+  <div class="glance">
+    <div class="g"><span class="num">+4.75%</span><span class="cap">Award rate increase from 1 July 2026</span></div>
+    <div class="g"><span class="num">$26.44/hr</span><span class="cap">New National Minimum Wage</span></div>
+    <div class="g"><span class="num">1 Jul</span><span class="cap">Payday Super starts, paid with every payrun</span></div>
+  </div>
+
   <div class="welcome">
     <span class="kicker dark">A note from our Managing Director</span>
     <p>Welcome to the first edition of <b>The Fortuna Update</b>. Each quarter we'll cut through the noise on
     industrial relations, award and Fair Work changes, and workplace health &amp; safety, and translate it into
     what it actually means for your business. No jargon, no 40-page bulletins, just the practical, "here's what
-    to check this quarter" version.</p>
-    <p>2026 has already been a big year for employers: a fresh Annual Wage Review decision, Payday Super landing on
-    1&nbsp;July, growing enforcement of psychosocial safety obligations, and the first ever root-and-branch review
-    of the National Employment Standards. This issue covers what matters most for WA employers right now, and if
-    anything here raises a flag for your business, we're one call away.</p>
+    to check this quarter" version, and if anything here raises a flag for your business, we're one call away.</p>
     <div class="sig">Christopher Straughan</div>
     <div class="role">Managing Director, Fortuna People Solutions</div>
   </div>
 
-  <h2 class="section" style="margin-top:6mm;">In this issue</h2>
+  <h2 class="section" style="margin-top:5mm;">In this issue</h2>
   <div class="pillrow">
     <div class="pill"><span class="num">1</span><span class="t">IR &amp; ER Update</span></div>
     <div class="pill"><span class="num">2</span><span class="t">Award &amp; WHS Compliance</span></div>
     <div class="pill"><span class="num">3</span><span class="t">Respect@Work</span></div>
     <div class="pill"><span class="num">4</span><span class="t">How We Can Help</span></div>
+  </div>
+
+  <h2 class="section" style="margin-top:5mm;">Why clients choose us</h2>
+  <div class="why-grid">
+    <div class="w"><div class="mk"></div><div class="tx"><b>Personalised, not a call centre</b><span>Retainer clients get one dedicated HR Consultant who knows your business, on-site.</span></div></div>
+    <div class="w"><div class="mk"></div><div class="tx"><b>Fast response, no lock-in</b><span>Same-day priority responses for retainer clients, and you stay because we deliver.</span></div></div>
+    <div class="w"><div class="mk"></div><div class="tx"><b>Executive-level expertise</b><span>Led by consultants with real private-sector experience across Australia, Asia and NZ.</span></div></div>
+    <div class="w"><div class="mk"></div><div class="tx"><b>Legal backup included</b><span>Backed by employment lawyers through Fortuna's legal division for privileged matters.</span></div></div>
+  </div>
+
+  <div class="accred">
+    <img src="assets/ahri-logo.png" alt="Australian HR Institute">
+    <div class="tx"><b>One of our accreditations:</b> Fortuna People Solutions is connected with the Australian HR
+    Institute (AHRI), the professional body for HR practitioners in Australia.</div>
   </div>
 
   <div class="foot">
@@ -178,7 +214,7 @@
 <div class="page">
   <div class="brandbar"></div>
   <div class="masthead">
-    <img src="assets/fortuna-logo.jpg" alt="Fortuna People Solutions">
+    <img src="assets/fortuna-logo-hires.png" alt="Fortuna People Solutions">
     <div class="issue-tag">Issue 01 &middot; 1 October 2026</div>
   </div>
 
@@ -220,7 +256,7 @@
 <div class="page">
   <div class="brandbar"></div>
   <div class="masthead">
-    <img src="assets/fortuna-logo.jpg" alt="Fortuna People Solutions">
+    <img src="assets/fortuna-logo-hires.png" alt="Fortuna People Solutions">
     <div class="issue-tag">Issue 01 &middot; 1 October 2026</div>
   </div>
 
@@ -281,7 +317,7 @@
 <div class="page">
   <div class="brandbar"></div>
   <div class="masthead">
-    <img src="assets/fortuna-logo.jpg" alt="Fortuna People Solutions">
+    <img src="assets/fortuna-logo-hires.png" alt="Fortuna People Solutions">
     <div class="issue-tag">Issue 01 &middot; 1 October 2026</div>
   </div>
 
