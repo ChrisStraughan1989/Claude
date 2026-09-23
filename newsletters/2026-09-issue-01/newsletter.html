@@ -18,8 +18,8 @@
   body{
     font-family:-apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     color:var(--dark);
-    font-size:9.6pt;
-    line-height:1.44;
+    font-size:9.3pt;
+    line-height:1.4;
     -webkit-print-color-adjust:exact;
     print-color-adjust:exact;
   }
@@ -28,48 +28,48 @@
     width:210mm;
     min-height:297mm;
     position:relative;
-    padding:16mm 16mm 13mm 16mm;
+    padding:15mm 15mm 12mm 15mm;
     page-break-after:always;
   }
   .page:last-child{page-break-after:auto;}
 
   /* ---------- shared header/footer ---------- */
   .brandbar{
-    height:6mm;
+    height:5.5mm;
     background:linear-gradient(90deg,var(--blue) 0%,var(--teal) 45%,var(--green) 100%);
-    margin:-16mm -16mm 7mm -16mm;
+    margin:-15mm -15mm 6mm -15mm;
   }
-  .masthead{ display:flex; align-items:center; justify-content:space-between; margin-bottom:4mm;}
-  .masthead img{height:12mm;}
+  .masthead{ display:flex; align-items:center; justify-content:space-between; margin-bottom:3.5mm;}
+  .masthead img{height:11mm;}
   .masthead .issue-tag{
-    text-align:right; color:var(--gray); font-size:8.2pt; font-weight:600; letter-spacing:.04em; text-transform:uppercase;
+    text-align:right; color:var(--gray); font-size:8pt; font-weight:600; letter-spacing:.04em; text-transform:uppercase;
   }
   .foot{
-    position:absolute; left:16mm; right:16mm; bottom:7mm;
-    border-top:0.6pt solid var(--linegray); padding-top:2.6mm;
-    display:flex; justify-content:space-between; font-size:7.4pt; color:var(--gray);
+    position:absolute; left:15mm; right:15mm; bottom:6.5mm;
+    border-top:0.6pt solid var(--linegray); padding-top:2.4mm;
+    display:flex; justify-content:space-between; font-size:7.2pt; color:var(--gray);
   }
   .pagenum{color:var(--gray);}
 
   h1.title{
-    font-size:22pt; margin:2mm 0 1mm 0; color:var(--dark); font-weight:800; letter-spacing:-.01em;
+    font-size:21pt; margin:1mm 0 1mm 0; color:var(--dark); font-weight:800; letter-spacing:-.01em;
   }
   .subtitle{
-    font-size:11.5pt; color:var(--teal); font-weight:600; margin:0 0 5mm 0;
+    font-size:11pt; color:var(--teal); font-weight:600; margin:0 0 4mm 0;
   }
   h2.section{
-    font-size:13.5pt; color:var(--blue); margin:0 0 2.6mm 0; font-weight:800;
-    padding-bottom:1.3mm; border-bottom:1.4pt solid var(--blue);
+    font-size:13pt; color:var(--blue); margin:0 0 2.4mm 0; font-weight:800;
+    padding-bottom:1.2mm; border-bottom:1.4pt solid var(--blue);
   }
   h2.section.teal{ color:var(--teal); border-bottom-color:var(--teal); }
   h2.section.green{ color:#5E8E23; border-bottom-color:var(--green); }
-  h3.item{ font-size:10.6pt; margin:4mm 0 1mm 0; color:var(--dark); font-weight:700;}
-  p{margin:0 0 2.2mm 0;}
-  .lead{font-size:10pt; color:var(--gray); margin-bottom:4mm;}
+  h3.item{ font-size:10.3pt; margin:3.4mm 0 1mm 0; color:var(--dark); font-weight:700;}
+  p{margin:0 0 2mm 0;}
+  .lead{font-size:9.6pt; color:var(--gray); margin-bottom:3.4mm;}
 
   .kicker{
-    display:inline-block; font-size:7.4pt; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
-    color:#fff; background:var(--blue); padding:1.2mm 3mm; border-radius:2mm; margin-bottom:2mm;
+    display:inline-block; font-size:7.2pt; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:#fff; background:var(--blue); padding:1.1mm 3mm; border-radius:2mm; margin-bottom:1.8mm;
   }
   .kicker.teal{background:var(--teal);}
   .kicker.green{background:#5E8E23;}
@@ -77,69 +77,60 @@
 
   .statbox{
     background:var(--lightgray); border-left:3pt solid var(--blue);
-    padding:3.4mm 5mm; margin:2.6mm 0 3.4mm 0; border-radius:0 1.5mm 1.5mm 0;
+    padding:3mm 5mm; margin:2.2mm 0 3mm 0; border-radius:0 1.5mm 1.5mm 0;
   }
-  .statbox .num{font-size:18pt; font-weight:800; color:var(--blue); display:block; line-height:1.1;}
-  .statbox .cap{font-size:8.3pt; color:var(--gray);}
+  .statbox .num{font-size:17pt; font-weight:800; color:var(--blue); display:block; line-height:1.1;}
+  .statbox .cap{font-size:8.1pt; color:var(--gray);}
   .statrow{display:flex; gap:5mm;}
   .statrow .statbox{flex:1;}
 
   .action{
     background:#EFF7EC; border:0.7pt solid var(--green);
-    border-radius:1.5mm; padding:3mm 5mm; margin:2mm 0 4mm 0; font-size:9.2pt;
+    border-radius:1.5mm; padding:2.6mm 4.5mm; margin:1.8mm 0 3mm 0; font-size:8.9pt;
   }
   .action b{color:#4C7A1E;}
 
-  .twocol{ display:flex; gap:8mm; }
+  .twocol{ display:flex; gap:7mm; }
   .twocol .col{flex:1;}
 
-  ul.tight{margin:1mm 0 3mm 0; padding-left:4.2mm;}
-  ul.tight li{margin-bottom:1mm;}
+  table.svc{ width:100%; border-collapse:collapse; margin-top:1.6mm;}
+  table.svc td{ vertical-align:top; padding:1.6mm 3mm; border-top:0.5pt solid var(--linegray); font-size:8.6pt;}
+  table.svc td.h{ font-weight:700; width:30mm; color:var(--blue);}
 
-  table.svc{ width:100%; border-collapse:collapse; margin-top:2mm;}
-  table.svc td{ vertical-align:top; padding:2mm 3mm; border-top:0.5pt solid var(--linegray); font-size:9pt;}
-  table.svc td.h{ font-weight:700; width:32mm; color:var(--blue);}
+  .pillrow{ display:flex; gap:3.5mm; margin-top:4mm; }
+  .pillrow .pill{ flex:1; background:var(--lightgray); border-radius:2mm; padding:3.2mm 3.5mm; }
+  .pillrow .pill .num{ display:inline-block; width:5mm; height:5mm; line-height:5mm; text-align:center; border-radius:50%; background:var(--teal); color:#fff; font-weight:800; font-size:7.6pt; margin-bottom:1.4mm;}
+  .pillrow .pill .t{ display:block; font-weight:700; font-size:8.6pt; color:var(--dark);}
 
-  .toc{ margin-top:2mm; }
-  .toc .row{ display:flex; align-items:baseline; gap:3mm; padding:2.2mm 0; border-bottom:0.5pt solid var(--linegray);}
-  .toc .n{ font-weight:800; color:#fff; background:var(--teal); border-radius:50%; width:6mm; height:6mm; min-width:6mm; display:flex; align-items:center; justify-content:center; font-size:8.5pt;}
-  .toc .t{font-weight:700; font-size:9.6pt;}
-  .toc .d{color:var(--gray); font-size:8.4pt;}
-
-  .welcome{ background:var(--lightgray); border-radius:2mm; padding:4.5mm 6mm; margin-top:3mm;}
-  .welcome .sig{ margin-top:2mm; font-weight:700; color:var(--dark);}
-  .welcome .role{ color:var(--gray); font-size:8.6pt;}
-
-  .casebox{ border:0.7pt solid var(--linegray); border-radius:2mm; padding:3.6mm 5mm; margin-bottom:3mm;}
-  .casebox .cs-title{font-weight:800; color:var(--blue); font-size:9.8pt; margin-bottom:1.4mm;}
-  .casebox .cs-row{display:flex; gap:4mm; font-size:9pt; margin-bottom:0.8mm;}
-  .casebox .cs-row .lab{font-weight:700; color:var(--teal); min-width:16mm;}
+  .welcome{ background:var(--lightgray); border-radius:2mm; padding:4mm 5.5mm; margin-top:2.6mm;}
+  .welcome .sig{ margin-top:1.8mm; font-weight:700; color:var(--dark);}
+  .welcome .role{ color:var(--gray); font-size:8.4pt;}
 
   .cta{
-    margin-top:4mm; background:linear-gradient(90deg,var(--blue),var(--teal)); color:#fff;
-    border-radius:2mm; padding:5.5mm 7mm; text-align:center;
+    margin-top:3.5mm; background:linear-gradient(90deg,var(--blue),var(--teal)); color:#fff;
+    border-radius:2mm; padding:4.6mm 6.5mm; text-align:center;
   }
-  .cta h3{margin:0 0 1.4mm 0; font-size:12.5pt;}
-  .cta p{color:#EAF3F8; font-size:9.3pt; margin:0 0 2.6mm 0;}
-  .cta .details{font-weight:700; font-size:10pt;}
+  .cta h3{margin:0 0 1.3mm 0; font-size:11.8pt;}
+  .cta p{color:#EAF3F8; font-size:9pt; margin:0 0 2.2mm 0;}
+  .cta .details{font-weight:700; font-size:9.6pt;}
 
-  .diamond-strip{ display:flex; height:2.2mm; margin:5mm 0;}
+  .diamond-strip{ display:flex; height:2mm; margin:4mm 0;}
   .diamond-strip span{flex:1;}
   .diamond-strip span:nth-child(1){background:var(--blue);}
   .diamond-strip span:nth-child(2){background:var(--teal);}
   .diamond-strip span:nth-child(3){background:var(--green);}
 
-  .small{font-size:7.8pt; color:var(--gray);}
+  .small{font-size:7.6pt; color:var(--gray);}
 
-  .quarter-ahead{ background:var(--lightgray); border-radius:2mm; padding:4mm 5.5mm; margin-top:4mm; }
-  .quarter-ahead h4{ margin:0 0 1.5mm 0; font-size:9.8pt; color:var(--dark);}
+  .team{ display:flex; gap:7mm; margin:2.6mm 0 4mm 0; }
+  .team .member{ flex:1; display:flex; gap:3.5mm; align-items:flex-start; }
+  .team .member img{ width:17mm; height:17mm; border-radius:50%; object-fit:cover; border:1.5pt solid var(--lightgray); flex-shrink:0;}
+  .team .member .name{ font-weight:800; font-size:9.2pt; color:var(--dark); line-height:1.2;}
+  .team .member .role{ font-size:7.7pt; color:var(--teal); font-weight:700; margin-bottom:0.8mm;}
+  .team .member p{ font-size:8pt; margin:0; color:var(--gray); line-height:1.3;}
 
-  .team{ display:flex; gap:8mm; margin:3mm 0 5mm 0; }
-  .team .member{ flex:1; display:flex; gap:4mm; align-items:flex-start; }
-  .team .member img{ width:20mm; height:20mm; border-radius:50%; object-fit:cover; border:1.5pt solid var(--lightgray); flex-shrink:0;}
-  .team .member .name{ font-weight:800; font-size:9.6pt; color:var(--dark); line-height:1.25;}
-  .team .member .role{ font-size:8pt; color:var(--teal); font-weight:700; margin-bottom:1mm;}
-  .team .member p{ font-size:8.4pt; margin:0; color:var(--gray); line-height:1.35;}
+  .callout{ background:var(--lightgray); border-radius:1.5mm; padding:2.6mm 4.5mm; margin:2mm 0 0 0; font-size:8.6pt; font-style:italic; color:var(--gray);}
+  .callout b{ color:var(--dark); font-style:normal;}
 </style>
 </head>
 <body>
@@ -158,24 +149,23 @@
   <div class="welcome">
     <span class="kicker dark">A note from our Managing Director</span>
     <p>Welcome to the first edition of <b>The Fortuna Update</b>. Each quarter we'll cut through the noise on
-    industrial relations, employee relations, award and Fair Work changes, and workplace health &amp; safety,
-    and translate it into what it actually means for your business. No jargon, no 40-page bulletins, just the
-    practical, "here's what to check this quarter" version.</p>
+    industrial relations, award and Fair Work changes, and workplace health &amp; safety, and translate it into
+    what it actually means for your business. No jargon, no 40-page bulletins, just the practical, "here's what
+    to check this quarter" version.</p>
     <p>2026 has already been a big year for employers: a fresh Annual Wage Review decision, Payday Super landing on
     1&nbsp;July, growing enforcement of psychosocial safety obligations, and the first ever root-and-branch review
-    of the National Employment Standards. This issue walks through what matters most for WA employers right now.</p>
-    <p>As always, if anything here raises a flag for your business, we're one call away.</p>
+    of the National Employment Standards. This issue covers what matters most for WA employers right now, and if
+    anything here raises a flag for your business, we're one call away.</p>
     <div class="sig">Christopher Straughan</div>
     <div class="role">Managing Director, Fortuna People Solutions</div>
   </div>
 
-  <h2 class="section" style="margin-top:7mm;">In this issue</h2>
-  <div class="toc">
-    <div class="row"><div class="n">1</div><div><span class="t">IR &amp; ER Update</span><br><span class="d">Annual Wage Review 2026, Payday Super, Fair Work Act changes &amp; the NES review</span></div></div>
-    <div class="row"><div class="n">2</div><div><span class="t">Award Compliance Corner + Case Study</span><br><span class="d">What the 4.75% increase and C13 phase-out mean for your pay rates</span></div></div>
-    <div class="row"><div class="n">3</div><div><span class="t">WHS &amp; Safety Focus</span><br><span class="d">Psychosocial hazards enforcement, WA WHS Act review, new chemical exposure limits</span></div></div>
-    <div class="row"><div class="n">4</div><div><span class="t">Respect@Work Spotlight</span><br><span class="d">The positive duty is now being actively enforced. Are you ready?</span></div></div>
-    <div class="row"><div class="n">5</div><div><span class="t">How Fortuna Can Help</span><br><span class="d">Our full range of HR, WHS, recruitment and investigation services</span></div></div>
+  <h2 class="section" style="margin-top:6mm;">In this issue</h2>
+  <div class="pillrow">
+    <div class="pill"><span class="num">1</span><span class="t">IR &amp; ER Update</span></div>
+    <div class="pill"><span class="num">2</span><span class="t">Award &amp; WHS Compliance</span></div>
+    <div class="pill"><span class="num">3</span><span class="t">Respect@Work</span></div>
+    <div class="pill"><span class="num">4</span><span class="t">How We Can Help</span></div>
   </div>
 
   <div class="foot">
@@ -194,36 +184,31 @@
 
   <span class="kicker">Section 01</span>
   <h2 class="section">IR &amp; ER Update</h2>
-  <p class="lead">The four biggest industrial and employee relations developments this quarter, and what they mean on the ground.</p>
+  <p class="lead">The three biggest industrial and employee relations developments this quarter, and what they mean on the ground.</p>
 
   <h3 class="item">Annual Wage Review 2026: award rates up 4.75%, minimum wage breaks $1,000/week</h3>
   <div class="statrow">
     <div class="statbox"><span class="num">+4.75%</span><span class="cap">Increase to modern award minimum rates, effective from the first full pay period on or after 1 July 2026</span></div>
     <div class="statbox"><span class="num">$26.44/hr</span><span class="cap">New National Minimum Wage: $1,004.90/week, the first time it has topped $1,000</span></div>
   </div>
-  <p>The Fair Work Commission also began a three-stage process to phase out the lowest award classification (C13),
-  restructuring the bottom of the award pay scale. Worth tracking if your rates sit near that level.</p>
+  <p>The Fair Work Commission also began phasing out the lowest award classification (C13), restructuring the
+  bottom of the award pay scale. Worth tracking if your rates sit near that level.</p>
   <div class="action"><b>What this means for you:</b> if you haven't already updated pay rates for 2026/27, this is
   overdue and accruing risk with every pay run. We can run a same-week rate check across your award(s).</div>
 
   <h3 class="item">Payday Super starts 1 July 2026</h3>
-  <p>Super guarantee contributions must now be paid <b>at the same time as wages</b> (weekly, fortnightly or
-  monthly) rather than quarterly, and must land in the employee's fund within <b>7 business days</b> of payday. A new
-  "qualifying earnings" measure replaces ordinary time earnings, and funds must be able to receive contributions via
-  the National Payments Platform. Missing the window can trigger ATO penalties and interest, even where unintentional.</p>
+  <p>Super guarantee contributions must now be paid <b>at the same time as wages</b> and land in the employee's
+  fund within <b>7 business days</b> of payday. A new "qualifying earnings" measure replaces ordinary time
+  earnings. Missing the window can trigger ATO penalties and interest, even where unintentional.</p>
   <div class="action"><b>What this means for you:</b> payroll cut-offs and super clearing house timing need to be
   re-checked against the new 7-day rule; this is a process risk, not just a finance one.</div>
 
-  <h3 class="item">First-ever full review of the National Employment Standards</h3>
-  <p>The Government has launched the first comprehensive review of the NES since the Fair Work Act began. Alongside
-  it, the Commission is examining regulated labour hire arrangements, and award flexibility (rostering, penalty
-  rates) in hospitality and retail is under active review. None of this changes your obligations today, but
-  it's the clearest signal yet that further reform is coming.</p>
-
-  <h3 class="item">Labour hire &amp; "Same Job, Same Pay" orders continue to land</h3>
-  <p>Regulated labour hire orders (requiring labour hire workers to be paid at least what the host's
-  enterprise agreement would pay) are now well-established, with orders and matters under consideration
-  worth more than $200 million nationally. If you host labour hire workers alongside an EA, this remains live.</p>
+  <h3 class="item">Reform on the horizon</h3>
+  <p>The Government has launched the first-ever full review of the National Employment Standards, the Commission is
+  examining regulated labour hire arrangements, and award flexibility in hospitality and retail is under active
+  review. Meanwhile, "Same Job, Same Pay" orders continue to land, with orders and matters under consideration
+  worth more than $200 million nationally. None of this changes your obligations today, but it's the clearest
+  signal yet that further reform is coming.</p>
 
   <div class="foot">
     <div>The Fortuna Update &middot; Issue 01, 1 October 2026</div>
@@ -231,7 +216,7 @@
   </div>
 </div>
 
-<!-- ================= PAGE 3 : AWARD COMPLIANCE + CASE STUDY ================= -->
+<!-- ================= PAGE 3 : AWARD COMPLIANCE + WHS ================= -->
 <div class="page">
   <div class="brandbar"></div>
   <div class="masthead">
@@ -247,37 +232,44 @@
   <div class="twocol">
     <div class="col">
       <h3 class="item">1. Rates</h3>
-      <p>Confirm every classification under your award(s) reflects the 4.75% increase from the first full pay period
-      on or after 1&nbsp;July 2026, including allowances and penalty rates, which are often missed.</p>
+      <p>Confirm every classification reflects the 4.75% increase from the first full pay period on or after
+      1&nbsp;July 2026, including allowances and penalty rates, which are often missed.</p>
       <h3 class="item">2. Casual conversion</h3>
       <p>80+ modern awards now carry a casual conversion / "employee choice" pathway. Long-term regular casuals may
       trigger active obligations to respond to conversion requests.</p>
     </div>
     <div class="col">
       <h3 class="item">3. Classifications</h3>
-      <p>With the FWC beginning to phase out the C13 classification, businesses using entry-level classifications
-      should watch for flow-on structural changes in future reviews.</p>
+      <p>With the FWC phasing out the C13 classification, businesses using entry-level classifications should watch
+      for flow-on structural changes in future reviews.</p>
       <h3 class="item">4. Rostering &amp; overtime</h3>
       <p>Hospitality and retail award flexibility is under active FWC review, with potential changes to penalty
       rates and rostering rules worth watching if these awards apply to you.</p>
     </div>
   </div>
-  <div class="action"><b>Fortuna Award Compliance Review:</b> classification checks, pay rate verification, penalty
-  &amp; overtime compliance, allowances and entitlements, rostering compliance and casual conversion obligations,
-  reviewed and reported back with a clear remediation plan.</div>
+  <div class="callout"><b>Real result:</b> we recently helped a 50+ employee sporting club that had been paid under
+  the wrong award for five years, correcting classifications, contracts and payroll, and protecting directors from
+  future liability.</div>
 
   <div class="diamond-strip"><span></span><span></span><span></span></div>
 
-  <span class="kicker teal">Client Case Study</span>
-  <h2 class="section teal">Five years underpaid, and how it was fixed</h2>
-  <div class="casebox">
-    <div class="cs-title">Sporting Club, 50+ employees: Award compliance correction</div>
-    <div class="cs-row"><span class="lab">Issue</span><span>Staff had been paid under the wrong award for five years.</span></div>
-    <div class="cs-row"><span class="lab">Action</span><span>Fortuna conducted a full award compliance review, corrected classifications, updated contracts and implemented new payroll processes.</span></div>
-    <div class="cs-row"><span class="lab">Outcome</span><span>Compliance restored, financial risk mitigated, and directors protected from future liability.</span></div>
-  </div>
-  <p class="small">With award rates rising again this quarter and classification structures shifting, this is exactly
-  the kind of exposure we see most often, and it's entirely preventable with a proactive review.</p>
+  <span class="kicker green">Section 03</span>
+  <h2 class="section green">WHS &amp; Safety Focus</h2>
+  <p class="lead">Two WHS developments worth putting on your radar this quarter, particularly for WA-based employers.</p>
+
+  <h3 class="item">Psychosocial hazards: guidance is now enforcement</h3>
+  <p>Psychosocial hazards (bullying, excessive workload, fatigue, poor workplace behaviour and emotional harm) are
+  now a regulated, enforceable obligation in every Australian jurisdiction. PCBUs must actively identify, assess and
+  eliminate these risks, not just respond after a complaint. Psychological injury claims already cost employers more
+  than double the average physical injury claim.</p>
+
+  <h3 class="item">New exposure limits for hazardous chemicals from 1 December 2026</h3>
+  <p>New workplace exposure standards for hazardous chemicals take effect on 1&nbsp;December 2026. If your business
+  handles hazardous chemicals, dust or airborne contaminants, your safety documentation and monitoring should be
+  reviewed well ahead of this date.</p>
+
+  <div class="action"><b>What this means for you:</b> a documented psychosocial risk assessment is no longer "nice
+  to have," and chemical exposure controls should be reviewed now, not in the weeks before December.</div>
 
   <div class="foot">
     <div>The Fortuna Update &middot; Issue 01, 1 October 2026</div>
@@ -285,50 +277,7 @@
   </div>
 </div>
 
-<!-- ================= PAGE 4 : WHS ================= -->
-<div class="page">
-  <div class="brandbar"></div>
-  <div class="masthead">
-    <img src="assets/fortuna-logo.jpg" alt="Fortuna People Solutions">
-    <div class="issue-tag">Issue 01 &middot; 1 October 2026</div>
-  </div>
-
-  <span class="kicker green">Section 03</span>
-  <h2 class="section green">WHS &amp; Safety Focus</h2>
-  <p class="lead">Three WHS developments worth putting on your radar this quarter, particularly for WA-based
-  employers.</p>
-
-  <h3 class="item">Psychosocial hazards: guidance is now enforcement</h3>
-  <p>Psychosocial hazards (bullying, excessive workload, fatigue, poor workplace behaviour and emotional harm)
-  are now a regulated, enforceable obligation in every Australian jurisdiction. PCBUs must actively identify,
-  assess and eliminate (or minimise so far as reasonably practicable) these risks, not just respond after a complaint.
-  Psychological injury claims already cost employers more than double the average physical injury claim, with
-  materially longer recovery times and a higher likelihood of the employee leaving the workforce altogether.</p>
-  <div class="action"><b>What this means for you:</b> a documented psychosocial risk assessment is no longer
-  "nice to have." If you can't point to one for your business today, that's your first action item this quarter.</div>
-
-  <h3 class="item">WorkSafe WA reviewing the WHS Act 2020</h3>
-  <p>WorkSafe WA is conducting its first five-yearly review of the Work Health and Safety Act 2020, alongside a
-  national best-practice review of the model WHS laws being run by Safe Work Australia. Both reviews are expected to
-  report in 2026, and we'll keep you posted on anything that changes obligations for WA employers.</p>
-
-  <h3 class="item">New exposure limits for hazardous chemicals from 1 December 2026</h3>
-  <p>New workplace exposure standards for hazardous chemicals take effect on 1&nbsp;December 2026. If your business
-  handles hazardous chemicals, dust or airborne contaminants, including in construction, resources,
-  agriculture or facilities management, your safety documentation and monitoring should be reviewed well
-  ahead of this date, not in the weeks before it lands.</p>
-
-  <div class="action"><b>Fortuna WHS Audit:</b> gap analysis, safety documentation &amp; registers, risk assessments,
-  incident reporting processes, safety training &amp; inductions and contractor compliance checks, delivered
-  as part of our retainer or as a standalone review.</div>
-
-  <div class="foot">
-    <div>The Fortuna Update &middot; Issue 01, 1 October 2026</div>
-    <div class="pagenum">Page 4</div>
-  </div>
-</div>
-
-<!-- ================= PAGE 5 : RESPECT@WORK ================= -->
+<!-- ================= PAGE 4 : RESPECT@WORK + HOW FORTUNA CAN HELP ================= -->
 <div class="page">
   <div class="brandbar"></div>
   <div class="masthead">
@@ -338,70 +287,40 @@
 
   <span class="kicker">Section 04</span>
   <h2 class="section">Respect@Work Spotlight: the Positive Duty has teeth</h2>
-  <p class="lead">The obligation to prevent sexual harassment before it happens is no longer theoretical.
-  It's an active enforcement priority.</p>
-
-  <p>The Australian Human Rights Commission's power to investigate and enforce the positive duty to eliminate sexual
-  harassment is now firmly in an enforcement phase: the Commission has confirmed six formal inquiries underway, a
+  <p>The obligation to prevent sexual harassment before it happens is no longer theoretical. It's an active
+  enforcement priority: the Australian Human Rights Commission has confirmed six formal inquiries underway, a
   further 18 organisations being monitored, and roughly 140 complaints relating to potential non-compliance. A
-  statutory review of the positive duty is also scheduled this year, which will include the AHRC publishing
-  de-identified compliance and enforcement data, putting employer conduct under a brighter spotlight than
-  ever before.</p>
-
+  statutory review of the positive duty is also scheduled this year, putting employer conduct under a brighter
+  spotlight than ever before.</p>
   <div class="action"><b>What this means for you:</b> the positive duty requires proactive, documented prevention
-  (policies, training, risk assessments and clear reporting pathways), not just a reactive complaints
-  process. Waiting for a complaint before acting is now itself a compliance gap.</div>
+  (policies, training, risk assessments and clear reporting pathways), not just a reactive complaints process.
+  Waiting for a complaint before acting is now itself a compliance gap.</div>
 
-  <h3 class="item">A simple self-check</h3>
-  <p>Ask yourself honestly: do you have an up-to-date sexual harassment &amp; bullying policy, has it been trained
-  into your team in the last 12 months, do managers know how to respond to an informal complaint, and could you
-  produce a documented risk assessment if the AHRC asked tomorrow? If any answer is "no," that's where to start.</p>
-
-  <div class="quarter-ahead">
-    <h4>Looking ahead to next issue</h4>
-    <p style="margin:0;">In our December edition, we'll cover the outcomes of the NES review submissions, any
-    further Fair Work Commission award flexibility decisions for hospitality and retail, and a first look at how
-    businesses are preparing for Payday Super's first full quarter in practice.</p>
-  </div>
-
-  <div class="foot">
-    <div>The Fortuna Update &middot; Issue 01, 1 October 2026</div>
-    <div class="pagenum">Page 5</div>
-  </div>
-</div>
-
-<!-- ================= PAGE 6 : HOW FORTUNA CAN HELP + CTA ================= -->
-<div class="page">
-  <div class="brandbar"></div>
-  <div class="masthead">
-    <img src="assets/fortuna-logo.jpg" alt="Fortuna People Solutions">
-    <div class="issue-tag">Issue 01 &middot; 1 October 2026</div>
-  </div>
+  <div class="diamond-strip"><span></span><span></span><span></span></div>
 
   <span class="kicker green">Section 05</span>
   <h2 class="section green">How Fortuna Can Help</h2>
-  <p class="lead">Everything in this newsletter (wage reviews, award risk, WHS obligations, Respect@Work)
-  is work we do for clients every day. Here's the full range of support available to you.</p>
+  <p class="lead">Everything in this newsletter (wage reviews, award risk, WHS obligations, Respect@Work) is work
+  we do for clients every day.</p>
 
   <table class="svc">
-    <tr><td class="h">HR Retainer</td><td>One dedicated consultant who knows your business, same-day priority response, no lock-in contract, unlimited access to our HR/WHS template library, and legal backup through Fortuna's employment lawyers.</td></tr>
+    <tr><td class="h">HR Retainer</td><td>One dedicated consultant, same-day priority response, no lock-in contract, unlimited access to our HR/WHS template library, and legal backup through Fortuna's employment lawyers.</td></tr>
     <tr><td class="h">Award &amp; Compliance</td><td>Classification checks, pay rate verification, penalty &amp; overtime compliance, allowances, rostering and casual conversion reviews.</td></tr>
-    <tr><td class="h">WHS Audits</td><td>Gap analysis, safety documentation &amp; registers, risk assessments, incident reporting processes, safety training/inductions and contractor compliance checks.</td></tr>
+    <tr><td class="h">WHS Audits</td><td>Gap analysis, safety documentation &amp; registers, risk assessments, incident reporting, safety training/inductions and contractor compliance checks.</td></tr>
     <tr><td class="h">HR Documentation</td><td>Employment contracts, policies &amp; procedures, position descriptions, performance frameworks, induction packs and employee handbooks.</td></tr>
     <tr><td class="h">Investigations</td><td>Licensed workplace investigators for bullying, harassment and Respect@Work matters, plus insurance investigations, private investigations/surveillance and mediation.</td></tr>
     <tr><td class="h">Recruitment</td><td>End-to-end recruitment, confidential executive search, onsite recruiters for large projects, and mobilisation management for resources-sector clients.</td></tr>
     <tr><td class="h">Projects &amp; Advisory</td><td>Enterprise agreements, redundancy/restructure support, M&amp;A people integration, leadership training, remuneration benchmarking and HRIS rollout support, fixed-fee or hourly.</td></tr>
   </table>
 
-  <h3 class="item">Meet the team behind the advice</h3>
   <div class="team">
     <div class="member">
       <img src="assets/christopher-straughan.png" alt="Christopher Straughan">
       <div>
         <div class="name">Christopher Straughan</div>
         <div class="role">Managing Director</div>
-        <p>A multi-disciplinary expert across HR, WHS, workplace relations, IR and investigations, with experience
-        leading teams across Australia, Asia and New Zealand.</p>
+        <p>A multi-disciplinary expert across HR, WHS, workplace relations, IR and investigations, across Australia,
+        Asia and New Zealand.</p>
       </div>
     </div>
     <div class="member">
@@ -410,7 +329,7 @@
         <div class="name">Michael Seeds</div>
         <div class="role">Recruitment Manager</div>
         <p>Leads our recruitment team, bringing a commercial, numbers-driven approach built on 5+ years in senior
-        recruitment roles across Australia.</p>
+        recruitment roles.</p>
       </div>
     </div>
   </div>
@@ -421,15 +340,13 @@
     <div class="details">(08) 9240 4211 &nbsp;&middot;&nbsp; hr@fortunaadvisors.com.au &nbsp;&middot;&nbsp; www.fortunaadvisors.com.au</div>
   </div>
 
-  <p class="small" style="margin-top:5mm;">This newsletter is general information current as at 1 October 2026 and
-  is not legal advice. Rates, dates and obligations should be confirmed against your specific award(s), agreements
-  and circumstances; talk to us before relying on it. &copy; Fortuna People Solutions, part of Fortuna Advisory
-  Group. You are receiving this newsletter as a valued client or contact of Fortuna People Solutions; to unsubscribe,
-  reply to this email and let us know.</p>
+  <p class="small" style="margin-top:3.5mm;">This newsletter is general information current as at 1 October 2026 and
+  is not legal advice; talk to us before relying on it. &copy; Fortuna People Solutions, part of Fortuna Advisory
+  Group. To unsubscribe, reply to this email and let us know.</p>
 
   <div class="foot">
     <div>Level 1, 147 Colin St, West Perth WA 6005 &middot; (08) 9240 4211 &middot; hr@fortunaadvisors.com.au</div>
-    <div class="pagenum">Page 6</div>
+    <div class="pagenum">Page 4</div>
   </div>
 </div>
 
