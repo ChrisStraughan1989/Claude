@@ -133,6 +133,13 @@
 
   .quarter-ahead{ background:var(--lightgray); border-radius:2mm; padding:4mm 5.5mm; margin-top:4mm; }
   .quarter-ahead h4{ margin:0 0 1.5mm 0; font-size:9.8pt; color:var(--dark);}
+
+  .team{ display:flex; gap:8mm; margin:3mm 0 5mm 0; }
+  .team .member{ flex:1; display:flex; gap:4mm; align-items:flex-start; }
+  .team .member img{ width:20mm; height:20mm; border-radius:50%; object-fit:cover; border:1.5pt solid var(--lightgray); flex-shrink:0;}
+  .team .member .name{ font-weight:800; font-size:9.6pt; color:var(--dark); line-height:1.25;}
+  .team .member .role{ font-size:8pt; color:var(--teal); font-weight:700; margin-bottom:1mm;}
+  .team .member p{ font-size:8.4pt; margin:0; color:var(--gray); line-height:1.35;}
 </style>
 </head>
 <body>
@@ -385,6 +392,28 @@
     <tr><td class="h">Recruitment</td><td>End-to-end recruitment, confidential executive search, onsite recruiters for large projects, and mobilisation management for resources-sector clients.</td></tr>
     <tr><td class="h">Projects &amp; Advisory</td><td>Enterprise agreements, redundancy/restructure support, M&amp;A people integration, leadership training, remuneration benchmarking and HRIS rollout support, fixed-fee or hourly.</td></tr>
   </table>
+
+  <h3 class="item">Meet the team behind the advice</h3>
+  <div class="team">
+    <div class="member">
+      <img src="assets/christopher-straughan.png" alt="Christopher Straughan">
+      <div>
+        <div class="name">Christopher Straughan</div>
+        <div class="role">Managing Director</div>
+        <p>A multi-disciplinary expert across HR, WHS, workplace relations, IR and investigations, with experience
+        leading teams across Australia, Asia and New Zealand.</p>
+      </div>
+    </div>
+    <div class="member">
+      <img src="assets/michael-seeds.png" alt="Michael Seeds">
+      <div>
+        <div class="name">Michael Seeds</div>
+        <div class="role">Recruitment Manager</div>
+        <p>Leads our recruitment team, bringing a commercial, numbers-driven approach built on 5+ years in senior
+        recruitment roles across Australia.</p>
+      </div>
+    </div>
+  </div>
 
   <div class="cta">
     <h3>Not sure where you stand? Start with a health check.</h3>
